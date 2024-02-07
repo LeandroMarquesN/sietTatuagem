@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LM_TATOOSTUDIO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Oswald:wght@300;400;500;700&family=Poppins:wght@200;300;500;600;700;800&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-lZpXf+i9QlC3UqZFGADM/GPI04mNBtwHq2aeEj3ATz7zR5W5qA2TZKd5P0lR+ew+K" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <style>
+        html{   
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+        body.dark-mode {
+            background-color: #333;
+            color: #fff;
+        }
+        .home{
+            height: 100vh;
+            width: 100vW;
+        }
+        .homeCarrocel {
+        height: 95vh; /* Alterado de 40% para 40vh (40% da altura da tela) */
+        width: 100vw;
+        }
+        .crhome{
+            width: 100vw;
+            height: 80vh;
+        }
+        /* ---- Sobre ----- */
+        .sobre{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            width: 100vW;
+        }
+        .psobre{
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.3rem;
+            text-align: justify;
+        }
+        .psobreC{
+            text-align: center; 
+        }
+        .portfolio{
+            height: 90vh;
+            width: 100vW;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .cuidados{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 2rem;
+            height: 100vh;
+            width: 100vW;
+        }
+        .contato{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 2rem;
+            height: 100vh;
+            width: 100vW;
+        }
+        .texto1{
+            font-size: 5rem;
+            font-weight: bold;
+        }
+
+        @media (max-width: 820px) {
+            .homeCarrocel, .crhome, .sobre, .portfolio, .cuidados, .contato {
+                height: auto;
+            }
+
+            .texto1 {
+                font-size: 3rem;
+            }
+
+            .psobre {
+                font-size: 1rem;
+            }
+
+            .texto2 {
+                font-size: 1.5rem;
+            }
+        }
+        
+        /* Adicione mais estilos de acordo com suas necessidades */
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid ">
+    <a class="navbar-brand" href="#">LM-TATOOSTUDIO</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#sobre">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#portfolio">Portfólio</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#cuidados">Cuidados</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contato">Contato</a>
+        </li>
+      </ul>
+    </div>
+    <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="darkModeSwitch">
+        <label class="form-check-label text-light" for="darkModeSwitch">Dark Mode</label>
+    </div>
+  </div>
+</nav>
+
+<!-- Seções do site -->
+<section id="home" class="home">
+    <h1>Home </h1>
+    <!-- Conteúdo da seção Home -->
+    <!-- Carrossel de imagens -->
+    <div id="carouselExampleIndicators" class="carousel slide homeCarrocel" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./imagens/imagen3.jpg" class="crhome" alt="Imagem 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="texto1">Bem-vindo ao Mundo da Criatividade!</h1>
+                    <h3 class="texto2">Conheça o Mestre da Arte: <span>Leandro Marques</span>!</h3>
+                    <h3 class="texto2">Este é o início da jornada rumo à sua obra-prima!</h3>
+                </div>
+            <div>
+                    
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./imagens/imagen2.jpg" class="crhome" alt="Imagem 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="texto1">Este é primeiro passo! para dar inicio a sua ideia.</h1>
+                    <h3 class="texto2">Conheça o Mestre da Arte: <span>Leandro Marques</span>!</h3>
+                    <h3 class="texto2">Este é o início da jornada rumo à sua obra-prima!</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./imagens/imagen1.jpg" class="crhome" alt="Imagem 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="texto1">Vamos juntos tirar essa ideia do papel e grava-la na sua pele?!</h1>
+                    <h3 class="texto2">Conheça o Mestre da Arte: <span>Leandro Marques</span>!</h3>
+                    <h3 class="texto2">Este é o início da jornada rumo à sua obra-prima!</h3>
+                </div>
+            </div>
+            <!-- Adicione mais itens conforme necessário -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+        </button>
+    </div>
+    
+    <br><br>
+    <!-- fim dos cards -->
+    
+</section><br><br>
+<!-- inico dos cards -->
+<div class="card container-fluid bg-dark" style="display: flex;flex-direction: row; justify-content: center;align-items: center;border: none;
+width: 100vw;
+color: antiquewhite;
+padding: 10px;
+gap: 6rem;
+;
+" >
+    <div class=“card-body” style="display: flex;flex-direction: column; justify-content: center;align-items: center;">
+        <img class=“card-img-top” src="./imagens/leo.png" style="border-radius: 50%;
+        width: 130px; height: 130px;
+        
+        " alt="Imagem do Leandro Marques">
+        <h5 class=“card-text”>Eu sou o Leandro Marques</h5>
+        <h5 class="card-title text-center " >E um prazer recebelos</h4>
+
+
+    </div> 
+    <div class=“card-body” style="display: flex;flex-direction: column; justify-content: center;align-items: center;">
+        <img class=“card-img-top” src="./icones/insta.png" style="border-radius: 50%;
+        width: 130px; height: 130px;
+        
+        " alt="Imagem do Leandro Marques">
+        <h5 class=“card-text”><a href="https://www.instagram.com/leandromarquestatoo/?hl=pt-br" target="_blank"
+        style="text-decoration: none;"
+            >@Leandro Marques</a> </h5>
+        <h5 class="card-title text-center " >Siga-me no instagram</h4>
+
+
+    </div>
+
+</div>
+
+<section id="sobre" class="sobre container">
+    <h1 class="psobreC">Vamos  conhecer um pouco sobre LM-TATOO?</h1><br>
+    <!-- Conteúdo da seção Sobre -->
+        <div class="container">
+            <p class="psobre" >Bem-vindo ao LM TATTOO STUDIO, onde a arte encontra a pele e a expressão se torna eterna. Somos mais do que um estúdio de tatuagem; somos contadores de histórias, artistas apaixonados e guardiões da autenticidade.</p>
+            
+            <p class="psobre">No coração de nossa jornada está a busca pela singularidade. Cada tatuagem é uma narrativa visual, uma manifestação única da sua identidade, paixões e experiências. Nossa equipe de tatuadores talentosos é dedicada a transformar suas ideias em obras de arte impressionantes, refletindo a verdadeira essência de quem você é.</p>
+    
+            <!-- <p class="psobre">No LM TATTOO STUDIO, a experiência é tão importante quanto o resultado final. Criamos um ambiente acolhedor e inspirador, onde você se sentirá confortável e confiante ao explorar o mundo da tatuagem. Nossa abordagem personalizada garante que cada cliente receba atenção exclusiva e um design que realmente fala com sua alma.</p> -->
+    
+            <p class="psobre">Além disso, valorizamos a segurança e a qualidade em cada etapa do processo. Utilizamos práticas de higiene rigorosas e trabalhamos com materiais da mais alta qualidade para garantir resultados duradouros e vibrantes.</p>
+    
+            <p class="psobre">Seja você um entusiasta experiente ou alguém que está prestes a dar o primeiro passo no mundo da tatuagem, estamos aqui para tornar cada experiência única e inesquecível. Explore nossos trabalhos, descubra sua inspiração e deixe-nos ajudá-lo a criar uma obra-prima que conte a sua história de maneira inigualável.</p>
+        </div>
+   
+</section>
+<br><br>
+
+<section id="portfolio" class="portfolio">
+    <h1>Portfólio</h1>
+    <!-- Galeria de imagens com 3 colunas e 3 linhas -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <img src="./imagens/imagen1.jpg" class="img-fluid" alt="Projeto 1">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="./imagens/imagen2.jpg" class="img-fluid" alt="Projeto 2">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="./imagens/imagen3.jpg" class="img-fluid" alt="Projeto 3">
+            </div>
+            <!-- Adicione mais colunas conforme necessário -->
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <img src="./imagens/imagen1.jpg" class="img-fluid" alt="Projeto 1">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="./imagens/imagen2.jpg" class="img-fluid" alt="Projeto 2">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="./imagens/imagen3.jpg" class="img-fluid" alt="Projeto 3">
+            </div>
+            <!-- Adicione mais colunas conforme necessário -->
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <img src="./imagens/imagen1.jpg" class="img-fluid" alt="Projeto 1">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="./imagens/imagen2.jpg" class="img-fluid" alt="Projeto 2">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="./imagens/imagen3.jpg" class="img-fluid" alt="Projeto 3">
+            </div>
+            <!-- Adicione mais colunas conforme necessário -->
+        </div>
+
+    </div>
+    
+    <hr>
+    
+</section>
+
+<div class="card container-fluid bg-dark" style="display: flex;flex-direction: row; justify-content: center;align-items: center;border: none;
+width: 100vw;
+color: antiquewhite;
+padding: 10px;
+gap: 6rem;
+;
+" >
+    <div class=“card-body” style="display: flex;flex-direction: column; justify-content: center;align-items: center;">
+        <img class=“card-img-top” src="./imagens/leo.png" style="border-radius: 50%;
+        width: 130px; height: 130px;
+        
+        " alt="Imagem do Leandro Marques">
+        <h5 class=“card-text”>Eu sou o Leandro Marques</h5>
+        <h5 class="card-title text-center " >E um prazer recebelos</h4>
+
+
+    </div> 
+    <div class=“card-body” style="display: flex;flex-direction: column; justify-content: center;align-items: center;">
+        <a href="https://www.instagram.com/leandromarquestatoo/?hl=pt-br" target="_blank"
+        style="text-decoration: none;">
+        <img class=“card-img-top” src="./icones/insta.png" style="border-radius: 50%;
+        width: 130px; height: 130px;
+        
+        " alt="Imagem do Leandro Marques">
+        <h5 class=“card-text”><a href="https://www.instagram.com/leandromarquestatoo/?hl=pt-br" target="_blank"
+        style="text-decoration: none;"
+            >@Leandro Marques</a> </h5>
+        </a>
+        
+        <h5 class="card-title text-center " >Siga-me no instagram</h4>
+
+
+    </div>
+
+</div>
+
+<section id="cuidados" class="cuidados">
+    <div class="container" id="container">
+        <h1 class="psobreC">Antes de seguirmos com sua TATTOO preciso saber se você possui algun desses sintomas! </h1><br>
+            <h3 class="psobre">
+                Você possui alguma condição de pele, como eczema, psoríase ou acne severa?
+            </h3>
+            <h6 class="psobre">
+                Algumas condições de pele podem afetar o processo de cicatrização e a qualidade final da tatuagem.
+            </h6>
+            <h3 class="psobre">
+                Está tomando algum medicamento ou passando por tratamento médico?
+
+            </h3>
+            <h6 class="psobre">
+                Certos medicamentos podem afetar a coagulação sanguínea ou interagir com o processo de cicatrização.
+            </h6>
+            <h3 class="psobre">
+
+                Você tem diabetes ou qualquer outra condição que afete a cicatrização?
+            </h3>
+            <h6 class="psobre">
+                Diabetes e outras condições de saúde podem retardar o processo de cicatrização, o que é crucial para a recuperação da tatuagem.
+            </h6>
+            <!-- <h3 class="psobre">
+                Você teve histórico de problemas cardíacos ou circulatórios?
+            </h3>
+            <h6 class="psobre">
+                Problemas cardíacos podem afetar a circulação sanguínea, o que é importante para a cicatrização adequada.
+
+            </h6> -->
+            <h3 class="psobre">
+                Você já teve convulsões ou epilepsia?
+            </h3>
+            <h6 class="psobre">
+                Alguns clientes podem ser sensíveis à dor durante a tatuagem, o que pode desencadear episódios.
+            </h6>
+            <h3 class="psobre">
+
+                Você está tomando alguma substância que afeta a coagulação sanguínea (anticoagulantes, por exemplo)?
+            </h3>
+            <!-- <h6 class="psobre">
+                Substâncias que afetam a coagulação podem aumentar o risco de sangramento excessivo durante o processo.
+
+            </h6>
+                
+
+               <h3 class="psobre">
+                   Você tem histórico de hepatite, HIV ou outras doenças infecciosas?
+
+               </h3>
+               <h6 class="psobre">
+                   Essas condições podem afetar a segurança da prática da tatuagem, e os estúdios geralmente têm medidas rigorosas de controle de infecções.
+
+               </h6> -->
+        
+    </div>
+</section>
+
+<section id="contato" class="contato">
+    <h1>Faça já seu orçamento</h1>
+    <!-- Conteúdo da seção Contato -->
+    <div class="container mt-5">
+        <form id="myForm" novalidate>
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome:</label>
+                <input type="text" class="form-control" id="nome" name="nome" required>
+                <div class="invalid-feedback">Por favor, insira seu nome.</div>
+            </div>
+    
+            <div class="mb-3">
+                <label for="telefone" class="form-label">Telefone:</label>
+                <input type="tel" class="form-control" id="telefone" name="telefone" pattern="[0-9]{10}" required>
+                <div class="invalid-feedback">Por favor, insira um número de telefone válido (apenas números).</div>
+            </div>
+    
+            <div class="mb-3">
+                <label for="email" class="form-label">E-mail:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+                <div class="invalid-feedback">Por favor, insira um endereço de e-mail válido.</div>
+            </div>
+            <div class="mb-3">
+                <label for="mensagem" class="form-label">Descreva sua ideia  ou projeto que você quer discutir comigo:</label>
+                <textarea class="form-control" id="mensagem" name="mensagem" rows="4" required></textarea>
+                <div class="invalid-feedback">Por favor, insira sua mensagem.</div>
+            </div>
+            <!-- Preciso de algumas informaçoes referente a suas condições fisicas -->
+            <div class="mb-3">
+                
+                  <div class="form-group">
+                    <label for="gravidez">Você está grávida ou amamentando?</label>
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="gravidez" name="gravidez">
+                      <label class="form-check-label" for="gravidez">Não</label>
+                    </div>
+                  </div>
+            
+                  <div class="form-group">
+                    <label for="alergias">Você tem histórico de alergias a tintas ou produtos para tatuagem?</label>
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="alergias" name="alergias">
+                      <label class="form-check-label" for="alergias">Não</label>
+                    </div>
+                  </div>
+            
+                  <!-- Adicione mais blocos similares para as outras perguntas -->
+            
+                
+              </div>
+    
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+</section>
+
+<!-- Rodapé -->
+<footer class="bg-dark text-light text-center py-3">
+    <p>&copy; 2024 LM-TATTOOSTUDIO. Todos os direitos reservados.</p>
+    <div class="social-icons">
+        <a href="https://www.instagram.com/leandromarquestatoo" target="_blank" class="text-light me-3">
+            <i class="fab fa-instagram" ></i> @leandromarquestatoo
+        </a>
+        <a href="https://wa.me/5511970166621" class="text-light">
+            <i class="fab fa-whatsapp "></i> (11) 97016-6621
+        </a>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    const darkModeSwitch = document.getElementById('darkModeSwitch');
+
+    darkModeSwitch.addEventListener('change', () => {
+        document.body.classList.toggle('dark-mode', darkModeSwitch.checked);
+    });
+     // Adicionando validação Bootstrap ao formulário
+     (function () {
+        'use strict';
+
+        var forms = document.querySelectorAll('.needs-validation');
+
+        Array.from(forms).forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+
+                form.classList.add('was-validated');
+            }, false);
+        });
+    })();
+</script>
+
+</body>
+</html>
